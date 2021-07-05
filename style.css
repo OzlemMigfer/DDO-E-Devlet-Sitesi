@@ -1,0 +1,612 @@
+
+body,html{
+    position: relative;
+    margin: 0;
+    overflow-x: hidden;
+    background: radial-gradient(circle farthest-corner at center,rgba(58,137,180,0) 0,rgba(58,137,180,.8) 100%),#FFF;;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#anasayfa{
+    margin-top: 5%;
+    margin-left: 20%;
+    border-radius: 9px;
+    position: relative;
+}
+
+#anasayfa{
+    max-width: 900px;
+    min-height: 600px;   
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 6.4px 8px rgb(33 78 103 / 20%);
+    margin-bottom: 20px;
+}
+
+#anasayfa #logo{
+    padding-left: 3%;
+    padding-top: 0.3%;
+}
+
+#anasayfa header h1{
+    background-image: url(https://cdn.e-devlet.gov.tr/themes/izmir/images/edkkds.svg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+} 
+
+#anasayfa #girislink{
+    padding-left: 2.5%;
+    color: rgb(90, 89, 89);
+}
+
+#anasayfa #girislink #links{
+    padding-left: 70px;
+    display: inline;
+    color:rgb(3, 141, 148)
+}
+
+#anasayfa #girislink #links1{
+    padding-left: 41px;
+    display: inline;
+    color:rgb(3, 141, 148)
+}
+
+#anasayfa #logos{
+    padding-left: 800px;
+    padding-top: 35px;
+    margin-left: 710px;
+}
+
+#anasayfa #logos{
+    display: inline;
+    background-image: url(https://cdn.e-devlet.gov.tr/themes/istanbul/images/agencies/1.png);
+    background-repeat: no-repeat;
+}
+
+#anasayfa #logo #yataycizgi{
+    border-top:1px grey ; 
+}
+
+#anasayfa .cerceve{
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border-style: groove;
+}
+img{
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+#anasayfa .cerceve #sifresayfasi{
+    display: inline;
+    color: rgb(102, 101, 101);
+    margin-top: 15px;
+}
+
+#anasayfa .cerceve #sifretext{
+    padding-left: 15px;
+    padding-right: 20px;
+    font-weight: 400px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(77, 74, 74);
+}
+
+#anasayfa .cerceve #yataycizgi{
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+#anasayfa .cerceve .dikeycizgi{
+    border-left: 1px solid grey;
+    height: 50px;
+    position: absolute;
+    left: 19.5%;
+    margin-left: -3px;
+    top: 150px;
+}
+
+#anasayfa .cerceve #sifretext a{
+    display: inline-block;
+    color: rgb(43, 128, 128);
+}
+
+#anasayfa .cerceve #sifretext #yataykesiklicizgi{
+    border-top: 1px grey;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 16px;
+}
+
+#anasayfa .cerceve .formlar{
+    padding-left: 12px;
+}
+
+#anasayfa .cerceve .formlar #tcyazi{
+    padding-right: 100px;
+    color: rgb(90, 88, 88);
+}
+
+#anasayfa .cerceve .formlar #tcyazi:before{
+    content: '* ';
+    color:#347aa1;
+    font-weight: 400;
+    position: relative;
+    top: -1px;
+    margin-right: 400;
+}
+
+#anasayfa .cerceve .formlar #ftc{
+    height: 25px;
+}
+
+#anasayfa .cerceve .formlar #yataykesiklicizgi{
+    border-top: 1px grey;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#anasayfa .cerceve .formlar #fsifre{
+    height: 25px;
+}
+
+#anasayfa .cerceve .formlar #sifresi:before{
+    content: '* ';
+    color:#347aa1;
+    font-weight: 400;
+    position: relative;
+    top: -1px;
+    margin-right: 400;
+}
+
+#anasayfa .cerceve .formlar #sifresi{
+    padding-right: 95px;
+    color: rgb(90, 88, 88);
+}
+
+#anasayfa .cerceve #sifrenotu a{
+    display: inline-block;
+    color: rgb(43, 128, 128);
+}
+
+#anasayfa .cerceve #sifrenotu{
+    line-height: 20px;
+    padding-left: 220px;
+    padding-right: 20px;
+    font-weight: 400px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: rgb(77, 74, 74);
+}
+
+#anasayfa .cerceve #sifrenotu #yataykesiklicizgi{
+    border-top: 1px grey;
+    margin-left: 2px;
+    margin-right: 200px;
+    margin-top: 16px;
+}
+
+#anasayfa .cerceve #yataykesiklicizgii{
+    border-top: 1px grey;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 14px;
+}
+
+#anasayfa .cerceve #iptalbutonu{
+    width: 120px;
+    height: 36px;
+    margin-left: 300px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    background: rgb(233, 229, 229) url(https://img.icons8.com/small/25/000000/less-than.png) no-repeat left 8px center;
+    color: rgb(107, 107, 107);
+}
+
+#anasayfa .cerceve #girisyapbutonu{
+    margin-left: 12px;
+    width: 120px;
+    height: 36px;
+    border-radius: 20px;
+    font-family:sans-serif;
+    background: #347aa1 url(https://img.icons8.com/ios/25/ffffff/more-than.png) no-repeat right 8px center;
+    color: white;
+}
+
+#anasayfa #alteki{
+    color: rgb(189, 185, 185);
+    font-size: 15px;
+    padding-left: 16px;
+    padding-top: 10px;
+}
+
+#anasayfa #alteki #sagalteki{
+    padding-left: 340px;
+    padding-right: 16px;
+    padding-top: 10px;
+    display: inline;
+    color:#347aa1;
+}
+
+#anasayfa #alteki #sagalteki #sagalteki1{
+    padding-left: 14px;
+    display: inline;
+    color:#347aa1;
+}
+
+#anasayfa .cerceve #sifretext #sifrenasilalinir{
+    text-decoration: none;
+}
+
+#anasayfa .cerceve .formlar #sifrenotu #sifreunutma{
+    text-decoration: none;
+}
+
+
+/*Mobil İmza*/
+#anasayfa .cerceve #mobillogo{
+    display: inline;
+    padding-left: 26px;
+}
+
+#anasayfa .cerceve #mobilsayfasi{
+    display: inline;
+    color: rgb(102, 101, 101);
+    margin-top: 15px;
+}
+
+#anasayfa .cerceve .dikeycizgimob{
+    border-left: 1px solid grey;
+    height: 50px;
+    position: absolute;
+    left: 36%;
+    margin-left: -3px;
+    top: 150px;
+}
+
+#anasayfa .cerceve #Mobilimzasayfasi #yataycizgi1{
+    margin-left: 4px;
+    margin-right: 705px;
+}
+#anasayfa .cerceve #Mobilimzasayfasi #yataycizgi2{
+    margin-top: -10px;
+    margin-left: 299px;
+    margin-right: 4px;
+}
+
+#anasayfa .cerceve #Mobilimzasayfasi #mobiltext{
+    padding-left: 15px;
+    padding-right: 20px;
+    font-weight: 400px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(77, 74, 74);
+}
+
+#anasayfa .cerceve #Mobilimzasayfasi #mobilimzanasilalinir{
+    display: inline;
+    color: #347aa1;
+    text-decoration: none;
+}
+
+#anasayfa .cerceve #yataykesiklicizgi3{
+    border-top: 1px rgb(116, 116, 116);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 14px;
+}
+#anasayfa .cerceve .formlar:nth-child(2){
+    padding-left: 12px;
+}
+
+#anasayfa .cerceve .formlar #gsmno{
+    padding-right: 85px;
+    color: rgb(90, 88, 88);
+}
+
+#anasayfa .cerceve .formlar #gsmno:before{
+    content: '* ';
+    color:#347aa1;
+    font-weight: 400;
+    position: relative;
+    top: -1px;
+    margin-right: 400;
+}
+
+#anasayfa .cerceve .formlar #fgsmno{
+    height: 25px;
+}
+
+#anasayfa .cerceve .formlar #gsmnotu{
+    color: rgb(133, 130, 130);
+    margin-top: 5px;
+    margin-left: 206px;
+    font-size: 14px;
+}
+
+#anasayfa .cerceve .formlar #yataykesiklicizgi4{
+    border-top: 1px rgb(116, 116, 116);
+    margin-left: 5px;
+    margin-right: 8px;
+    margin-top: 14px;
+}
+
+#anasayfa .cerceve .formlar #gsmoper::before{
+    content: '* ';
+    color:#347aa1;
+    font-weight: 400;
+    position: relative;
+    top: -1px;
+    margin-right: 400;
+}
+
+#anasayfa .cerceve .formlar #gsmoper{
+    margin-right: 60px;
+    color: rgb(90, 88, 88);
+}
+
+#anasayfa .cerceve .formlar #opernot{
+    color: rgb(133, 130, 130);
+    margin-top: 5px;
+    margin-left: 206px;
+    font-size: 14px;
+}
+
+#anasayfa .cerceve .formlar #yataykesiklicizgii5{
+    border-top: 1px rgb(116, 116, 116);
+    margin-left: 5px;
+    margin-right: 8px;
+    margin-top: 14px;
+}
+
+ /*eimza*/
+#anasayfa .cerceve #eimzalogo{
+    display: inline;
+    padding-left: 45px;
+}
+
+#anasayfa .cerceve #eimzasayfasi{
+    display: inline;
+    color: rgb(102, 101, 101);
+    margin-top: 15px;
+}
+
+#anasayfa .cerceve .dikeycizgiimza{
+    border-left: 1px solid grey;
+    height: 50px;
+    position: absolute;
+    left: 55%;
+    margin-left: -3px;
+    top: 150px;
+}
+#anasayfa .cerceve #Elektronikimzasayfasi #yataycizgi6{
+    margin-left: 4px;
+    margin-right: 555px;
+}
+#anasayfa .cerceve #Elektronikimzasayfasi #yataycizgi7{
+    margin-top: -10px;
+    margin-left: 470px;
+    margin-right: 4px;
+}
+
+#anasayfa .cerceve #Elektronikimzasayfasi #elekttext{
+    padding-left: 15px;
+    padding-right: 20px;
+    font-weight: 400px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(77, 74, 74);
+}
+
+#anasayfa .cerceve #Elektronikimzasayfasi #elektimzanasilalinir,#elektimzanasilgiris{
+    text-decoration: none;
+    padding-left: 15px;
+    color: #347aa1;
+}
+#anasayfa .cerceve #Elektronikimzasayfasi #yataycizgi8{
+    border-top: 1px rgb(116, 116, 116);
+    margin-left: 5px;
+    margin-right: 8px;
+    margin-top: 14px;
+}
+#anasayfa .cerceve #Elektronikimzasayfasi div#kesiklicerceve{
+    border-style: dotted;
+    border-width: -900px;
+    border-radius: 10px;
+    border-color: rgb(172, 184, 196);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    background-color: rgb(234, 246, 250);
+}
+#anasayfa .cerceve #Elektronikimzasayfasi #kesiklicerceve #yazinoktasi{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: rgb(97, 95, 95);
+    margin-left: 25px;
+}
+#anasayfa .cerceve #Elektronikimzasayfasi #tiklayiniz{
+    text-decoration: none;
+    color: rgb(39, 39, 202);
+}
+#anasayfa .cerceve #Elektronikimzasayfasi #kirmiziyazi{
+    color: red;
+}
+#anasayfa .cerceve #Elektronikimzasayfasi .formlar{
+    padding-left: 12px;
+}
+
+#anasayfa .cerceve #Elektronikimzasayfasi .formlar #tcyazi{
+    padding-right: 80px;
+    top: -20px;
+    color: rgb(90, 88, 88);
+}
+
+#anasayfa .cerceve #Elektronikimzasayfasi .formlar #tcyazi:before{
+    content: '* ';
+    color:#347aa1;
+    font-weight: 400;
+    position: relative;
+    top: -10px;
+    margin-right: 400;
+    margin-left: 15px;
+}
+
+#anasayfa .cerceve #Elektronikimzasayfasi .formlar #ftc{
+    height: 20px;
+}
+
+
+
+/*T.C. Kimlik Kartı*/
+#anasayfa .cerceve #kimliklogo{
+    display: inline;
+    padding-left: 50px;
+}
+
+#anasayfa .cerceve #kimliksayfasi{
+    display: inline;
+    color: rgb(102, 101, 101);
+    margin-top: 15px;
+}
+
+#anasayfa .cerceve .dikeycizgikim{
+    border-left: 1px solid grey;
+    height: 50px;
+    position: absolute;
+    left: 75%;
+    margin-left: -3px;
+    top: 150px;
+}
+#anasayfa .cerceve #tcKimlikKartisayfasi #yataycizgi9{
+    margin-left: 4px;
+    margin-right: 385px;
+}
+#anasayfa .cerceve #tcKimlikKartisayfasi #yataycizgi10{
+    margin-top: -10px;
+    margin-left: 650px;
+    margin-right: 4px;
+}
+#anasayfa .cerceve #tcKimlikKartisayfasi #kimliktext{
+    padding-left: 15px;
+    padding-right: 20px;
+    font-weight: 400px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(77, 74, 74);
+}
+#anasayfa .cerceve #tcKimlikKartisayfasi #kimliktext #kimliknedir{
+    text-decoration: none;
+    color: #347aa1;
+}
+#anasayfa .cerceve #tcKimlikKartisayfasi #yataycizgi11{
+    border-top: 1px rgb(116, 116, 116);
+    margin-top: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+#anasayfa .cerceve #tcKimlikKartisayfasi div#kesiklicerceve{
+    border-style: dotted;
+    border-width: -900px;
+    border-radius: 10px;
+    border-color: rgb(172, 184, 196);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    background-color: rgb(234, 246, 250);
+}
+#anasayfa .cerceve #tcKimlikKartisayfasi #kesiklicerceve #yazinoktasi{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: rgb(97, 95, 95);
+    margin-left: 25px;
+}
+#anasayfa .cerceve #tcKimlikKartisayfasi #tiklayiniz{
+    text-decoration: none;
+    color: rgb(39, 39, 202);
+}
+#anasayfa .cerceve #tcKimlikKartisayfasi .formlar{
+    padding-left: 12px;
+}
+
+#anasayfa .cerceve #tcKimlikKartisayfasi .formlar #tcyazi{
+    padding-right: 80px;
+    top: -20px;
+    color: rgb(90, 88, 88);
+}
+
+#anasayfa .cerceve #tcKimlikKartisayfasi .formlar #tcyazi:before{
+    content: '* ';
+    color:#347aa1;
+    font-weight: 400;
+    position: relative;
+    top: -10px;
+    margin-right: 400;
+    margin-left: 15px;
+}
+
+#anasayfa .cerceve #tcKimlikKartisayfasi .formlar #ftc{
+    height: 20px;
+}
+
+
+/*İnternet Bankacılığı*/
+#anasayfa .cerceve #internetlogo{
+    display: inline;
+    margin-left: 35px;
+    color: rgb(102, 101, 101);
+}
+
+#anasayfa .cerceve #internetsayfasi{
+    display: inline;
+    color: rgb(102, 101, 101);
+    margin-top: 15px;
+} 
+#anasayfa .cerceve #internetBankaciligisayfasi #yataycizgi12{
+    margin-left: 4px;
+    margin-right: 205px;
+}
+#anasayfa .cerceve #internetBankaciligisayfasi #nettext{
+    padding-left: 15px;
+    padding-right: 20px;
+    font-weight: 400px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(77, 74, 74);
+}
+#anasayfa .cerceve #internetBankaciligisayfasi #yataycizgi13{
+    border-top: 1px rgb(116, 116, 116);
+    margin-top: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+#anasayfa .cerceve #internetBankaciligisayfasi .bankalinkleri .grikare{
+    position: relative;
+    display: inline-block;
+    border-color: rgb(233, 228, 228);
+    border-style: groove;
+    margin-left: 22px;
+    
+}
+
+
+/*yeni css kodları*/
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+/*başlıklardaki buton özelliği giderildi*/
+.nav-tabs .nav-link{
+    margin-bottom: -1px;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}

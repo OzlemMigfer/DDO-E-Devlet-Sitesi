@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>e-Devlet Kapısı</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="anasayfa">
+            <header id="logo">
+                <h1>.</h1>
+            </header>
+            <hr id="yataycizgi">
+            <div id="girislink">
+                Giriş Yapılacak Adres
+                <div id="links">
+                    www.turkiye.gov.tr
+                </div> <br>       
+                    Giriş Yapılacak Uygulama  
+                <div id="links1">
+                    e-Devlet Kapısı
+                </div> 
+            </div>
+            <div id="logos"></div>
+
+
+            <div class="cerceve">
+                <main>
+
+                    <nav>
+                        <div class="nav nav-tabs">
+                            <img src="https://img.icons8.com/fluent-systems-filled/20/4a90e2/keyboard.png"/>
+                            <button id="sifresayfasi" class="nav-link active" data-bs-toggle="tab" onclick="openSelected('edevletsifresisayfasi')">e-Devlet Şifresi</button>
+                            <div class="dikeycizgi"></div>
+
+                            <img id="mobillogo" src="https://img.icons8.com/pastel-glyph/20/4a90e2/medical-mobile-app.png"/>
+                            <button id="mobilsayfasi" class="nav-link" data-bs-toggle="tab" onclick="openSelected('Mobilimzasayfasi')" >Mobil İmza</button>
+                            <div class="dikeycizgimob"></div>
+
+                            <img id="eimzalogo" src="https://img.icons8.com/ios-filled/20/4a90e2/usb-memory-stick.png"/>
+                            <button id="eimzasayfasi" class="nav-link" data-bs-toggle="tab" onclick="openSelected('Elektronikimzasayfasi')">Elektronik İmza</button>
+                            <div class="dikeycizgiimza"></div>
+
+                            <img id="kimliklogo" src="https://img.icons8.com/dotty/25/4a90e2/identity-theft.png"/>
+                            <button id="kimliksayfasi" class="nav-link" data-bs-toggle="tab" onclick="openSelected('tcKimlikKartisayfasi')">T.C. Kimlik Kartı</button>
+                            <div class="dikeycizgikim"></div>
+
+                            <img id="internetlogo" src="https://img.icons8.com/ios/20/4a90e2/internet-browser--v1.png"/>
+                            <button id="internetsayfasi" class="nav-link" data-bs-toggle="tab" onclick="openSelected('internetBankaciligisayfasi')">İnternet Bankacılığı</button>
+                        </div>
+                    </nav>
+
+                    
+                    <div id="edevletsifresisayfasi" class="navbarAlt">
+                        <!-- <script>
+                            function myFunction() {
+                              document.getElementById("mobilimzasayfasi").style.visibility=hidden;
+                            }
+                        </script> -->
+
+                        <hr id="yataycizgi"><br>
+                        <div id="sifretext">T.C. Kimlik Numaranızı ve e-Devlet Şifrenizi kullanarak kimliğiniz doğrulandıktan sonra işleminize kaldığınız yerden devam edebilirsiniz. 
+                            <a id="sifrenasilalinir" open-modal="info" href="#">e-Devlet Şifresi Nedir, Nasıl Alınır?</a>
+                            <hr id="yataykesiklicizgi">
+                        </div>
+                        <div class="formlar">
+                            <form action="/action_page.php" method="GET">
+                                <label id="tcyazi" for="ftc">T.C. Kimlik No</label>
+                                <input type="text" id="ftc" name="tc" required><br><br><br>
+                                <hr id="yataykesiklicizgi">
+                                <label id="sifresi" for="fsifre">e-Devlet Şifresi</label>
+                                <input type="password" id="fsifre" name="sifre" required><br><br><br>
+                                <div id="sifrenotu">* e-Devlet 
+                                    <a id="sifreunutma"open-modal="info" href="#">şifrenizi unutmanız durumunda</a>
+                                    doğruladığınız cep <br>telefonunuzdan yenileme işlemi yapabilirsiniz.
+                                    <hr id="yataykesiklicizgi">
+                                </div>
+                                <hr id="yataykesiklicizgii">
+                                <button id="iptalbutonu" type="reset" value="İptal Et">İptal Et</button>
+                                <button id="girisyapbutonu" type="submit" value="Giriş Yap">Giriş Yap</button>
+                            </form>  
+                        </div>
+                    </div>
+
+                    <div id="Mobilimzasayfasi" class="navbarAlt" style="display: none;">
+                        <hr id="yataycizgi1"><hr id="yataycizgi2"><br>
+                        <div id="mobiltext">Cep telefonunuz ve hattınıza kayıtlı mobil imzanız ile kimliğiniz doğrulandıktan sonra işleminize kaldığınız yerden devam edebilirsiniz. Eğer farklı bir yöntem ile kimlik doğrulaması yapmak istiyorsanız, yukarıda bulunan diğer seçenekleri kullanarak da sisteme giriş yapabilirsiniz. 
+                            <a id="mobilimzanasilalinir" open-modal="info" href="#">Mobil İmza Nedir, Nasıl Alınır?</a><br>
+                            <hr id="yataykesiklicizgi3">
+                        </div>
+                        <div class="formlar">
+                            <form action="/action_page.php" method="GET">
+                                <label id="tcyazi" for="ftc">T.C. Kimlik No</label>
+                                <input type="text" id="ftc" name="tc" required><br>
+                                <hr id="yataykesiklicizgi">
+                                <label id="gsmno" for="fgsmno">GSM Numaranız</label>
+                                <input type="text" id="fgsmno" name="gsmno" required><br>
+                                <div id="gsmnotu">
+                                    Mobil imzanızın tanımlı olduğu, 10 haneli cep telefonu numaranızı giriniz. <b>Örn:</b><br> 5XXXXXXXXX
+                                </div>
+                                <hr id="yataykesiklicizgi4">
+                                <div id="gsmoperator">
+                                    <label id="gsmoper" for="gsmoperator">GSM Operatörünüz</label>
+                                    <input id="gsmoperator" type="radio" name="operator" value="Türk Telekom">Türk Telekom
+                                    <input id="gsmoperator" type="radio" name="operator" value="Turkcell">Turkcell
+                                    <input id="gsmoperator" type="radio" name="operator" value="Vodafone">Vodafone<br>
+                                    <div id="opernot">
+                                        Hattınızın hizmet aldığı GSM operatörünü seçiniz.
+                                    </div>
+                                </div>
+                                <hr id="yataykesiklicizgii5">
+                                <button id="iptalbutonu" type="reset" value="İptal Et">İptal Et</button>
+                                <button id="girisyapbutonu" type="submit" value="Giriş Yap">Giriş Yap</button>
+                            </form>  
+                        </div>
+                        
+                    </div>
+
+                    <div id="Elektronikimzasayfasi" class="navbarAlt" style="display: none;">
+                        <hr id="yataycizgi6"><hr id="yataycizgi7"><br>
+                        <div id="elekttext">
+                            Elektronik İmzanız ile eşleşen kimlik numaranızı girdikten sonra işleminize devam edebilirsiniz. Eğer farklı bir yöntem ile kimlik doğrulaması yapmak istiyorsanız, yukarıda bulunan diğer seçenekleri kullanarak da sisteme giriş yapabilirsiniz.
+                        </div><br>
+                        <a id="elektimzanasilalinir">Elektronik İmza Nedir, Nasıl Alınır?</a><br>
+                        <a id="elektimzanasilgiris">E-İmza Uygulaması ile Nasıl Giriş Yapılır?</a><br>
+                        <hr id="yataycizgi8">
+                        <div id="kesiklicerceve">
+                            <ul id="yazinoktasi">
+                                <li>Aşağıdaki alana kimlik numaranızı yazınız.</li><br>
+                                <li>Masaüstünüzde bulunan e-imza uygulamasını açınız ve ekrandaki işlem kodunu giriniz. ( e-<br>Devlet Kapısı e-İmza Uygulaması'nı bilgisayarınıza indirmelisiniz. Uygulamayı indirmek için<br> <a id="tiklayiniz">tıklayınız</a>. Daha önce indirdiyseniz tekrar indirmenize gerek yoktur.)</li><br>
+                                <li id="kirmiziyazi">Eğer uygulamayı indirmede sorun yaşıyor ya da bağlantı hatası alıyorsanız linkteki dosyayı indiriniz. Dosyayı indirmek için <a id="tiklayiniz">tıklayınız</a>.</li><br>
+                                <li>İmzalama işlemini gerçekleştiriniz.</li>
+                            </ul>
+                        </div><br>
+                        <div class="formlar">
+                            <form action="/action_page.php" method="GET">
+                                <label id="tcyazi" for="ftc">T.C. Kimlik No</label>
+                                <input type="text" id="ftc" name="tc" required><br>
+                                <hr id="yataykesiklicizgi">
+                                <button id="iptalbutonu" type="reset" value="İptal Et">İptal Et</button>
+                                <button id="girisyapbutonu" type="submit" value="Giriş Yap">Giriş Yap</button>
+                            </form>  
+                        </div>
+                    </div>
+
+                    <div id="tcKimlikKartisayfasi" class="navbarAlt" style="display: none;">
+                        <hr id="yataycizgi9"><hr id="yataycizgi10"><br>
+                        <div id="kimliktext">
+                            Kimlik numaranızı girdikten sonra işleminize devam edebilirsiniz. Eğer farklı bir yöntem ile kimlik doğrulaması yapmak istiyorsanız, yukarıda bulunan diğer seçenekleri kullanarak da sisteme giriş yapabilirsiniz. 
+                            <a id="kimliknedir">T.C. Kimlik Kartı Nedir?</a>
+                        </div>
+                        <hr id="yataycizgi11">
+                        <div id="kesiklicerceve">
+                            <ul id="yazinoktasi">
+                                <li>Aşağıdaki alana kimlik numaranızı yazınız.</li><br>
+                                <li>Masaüstünüzde bulunan Kimlik Kartı uygulamasını açınız ve ekrandaki işlem kodunu giriniz. ( e-Devlet Kapısı Kimlik Kartı Uygulaması'nı bilgisayarınıza indirmelisiniz. Uygulamayı indirmek için<br> <a id="tiklayiniz">tıklayınız</a>.Daha önce indirdiyseniz tekrar indirmenize gerek yoktur.)</li><br>
+                                <li>Kimlik kartı doğrulama işlemini gerçekleştiriniz.</li>
+                            </ul>
+                        </div><br>
+                        <div class="formlar">
+                            <form action="/action_page.php" method="GET">
+                                <label id="tcyazi" for="ftc">T.C. Kimlik No</label>
+                                <input type="text" id="ftc" name="tc" required><br><br>
+                                <hr id="yataykesiklicizgi">
+                                <button id="iptalbutonu" type="reset" value="İptal Et">İptal Et</button>
+                                <button id="girisyapbutonu" type="submit" value="Giriş Yap">Giriş Yap</button>
+                            </form>  
+                        </div>
+                    </div>
+
+                    <div id="internetBankaciligisayfasi" class="navbarAlt" style="display: none;">
+                        <hr id="yataycizgi12"><br>
+                        <div id="nettext">
+                            Aşağıdaki bankaların İnternet şubeleri aracılığı ile başka bir şifreye ihtiyaç duymadan, güvenli bir şekilde e-Devlet<br> Kapısı'na giriş yapabilirsiniz. Bunun için aşağıdaki listeden İnternet bankacılığı kullanıcı hesabınız bulunan bankayı<br> seçmeniz ve İnternet bankacılığı kullanıcı bilgileriniz ile giriş yapmanız yeterlidir.
+                        </div>
+                        <hr id="yataycizgi13">
+                        <div class="bankalinkleri">
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/Akbank">
+                                    <img src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0046.png"width="60" height="32" alt="Akbank ile Giriş Yap"/>
+                                </a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/AlbarakaTurk"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0203.png"
+                                    width="64" height="32" alt="Albaraka Türk ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/AnadoluBank"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0135.png"
+                                    width="64" height="32" alt="Anadolubank ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/BurganBank"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0125.png"
+                                    width="64" height="32" alt="Burgan Bank ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/DenizBank"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0134.png"
+                                    width="64" height="32" alt="Denizbank ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/EmlakKatilim"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0211.png" width="64"
+                                    height="32" alt="Emlak Katılım Bankası ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/Fibabanka"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0103.png" width="64"
+                                    height="32" alt="Fibabanka ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/Finansbank"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0111.png"
+                                    width="64" height="32" alt="Finansbank ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/FinansbankEnpara"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0111a.png"
+                                    width="64" height="32" alt="Finansbank Enpara ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/GarantiBankasi"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0062.png"
+                                    width="64" height="32" alt="Garanti Bankası ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/HalkBank"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0012.png"
+                                    width="64" height="32" alt="Halkbank ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/HSBCBank"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0123.png"
+                                    width="64" height="32" alt="HSBCBank ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/INGBank"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0099.png"
+                                    width="64" height="32" alt="INGBank ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/KuveytTurk"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0205.png"
+                                    width="64" height="32" alt="Kuveyt Türk ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/OdeaBank"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0146.png"
+                                    width="64" height="32" alt="Odeabank ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/SekerBank"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0059.png"
+                                    width="64" height="32" alt="Şekerbank ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/TurkEkonomiBankasi"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0032.png"
+                                    width="64" height="32" alt="Türk Ekonomi Bankası ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/TurkiyeFinans"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0206.png" width="64"
+                                    height="32" alt="Türkiye Finas Bankası ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/IsBankasi"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0064.png"
+                                    width="64" height="32" alt="Türkiye İş Bankası ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/VakifBank"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0015.png"
+                                    width="64" height="32" alt="Vakıfbank ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/VakifKatilim"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0210.png"
+                                    width="64" height="32" alt="Vakıf Katılım ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/YapiKrediBankasi"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0067.png"
+                                    width="64" height="32" alt="Yapıkredi Bankası ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/ZiraatBankasi"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0010.png"
+                                    width="64" height="32" alt="Ziraat Bankası ile Giriş Yap"/></a>
+                            </p>
+                            <p class="grikare">
+                                <a href="/Giris/edevlet/ZiraatKatilim"><img
+                                    src="https://cdn.e-devlet.gov.tr/themes/ankara/images/logos/external/0209.png"
+                                    width="64" height="32" alt="Ziraat Katılım Bankası ile Giriş Yap"/></a>
+                            </p>
+                            <div style="clear:both"></div>
+                        </div>
+
+                    </div>
+
+
+
+                    <script>
+                        function openSelected(selectedName) {
+                          var i;
+                          var x = document.getElementsByClassName("navbarAlt");
+                          for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                          }
+                          document.getElementById(selectedName).style.display = "block";  
+                        }
+                        </script>
+
+
+                    <!-- <script>
+                        function functionMobil(){
+                            var x=document.getElementById('mobilimzasayfasi');
+                            if(x.style.visibility==='visible'){
+                                x.style.visibility='visible';
+                            }else{
+                                x.style.visibility='visible';
+                            } 
+
+                            var x=document.getElementById('edevletsifresisayfasi');
+                            if(x.style.visibility==='hidden'){
+                                x.style.visibility='hidden';
+                            }else{
+                                x.style.visibility='hidden';
+                            }
+
+                            var x=document.getElementById('eimzasayfasiii');
+                            if(x.style.visibility==='hidden'){
+                                x.style.visibility='hidden';
+                            }else{
+                                x.style.visibility='hidden';
+                            }
+                        }
+                        function myFunction(){
+                            var x=document.getElementById('edevletsifresisayfasi');
+                            if(x.style.visibility==='visible'){
+                                x.style.visibility='visible';
+                            }else{
+                                x.style.visibility='visible';
+                            }
+                            var x=document.getElementById('mobilimzasayfasi');
+                            if(x.style.visibility==='hidden'){
+                                x.style.visibility='hidden';
+                            }else{
+                                x.style.visibility='hidden';
+                            }
+                        } 
+                    </script> -->
+                </main> 
+            </div>
+
+
+            <footer class="footerkismi">
+                <div id="alteki">© 2021, Ankara - Tüm Hakları Saklıdır
+                    <div id="sagalteki">Gizlilik ve Güvenlik
+                        <div id="sagalteki1">Hızlı Çözüm Merkezi</div>
+                    </div> 
+                </div>
+            </footer>  
+        </div> 
+    </body>
+</html>
